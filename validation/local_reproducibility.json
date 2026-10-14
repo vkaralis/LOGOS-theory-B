@@ -1,6 +1,10 @@
 {
   "all_passed": true,
   "input_sha256": "9da5d1ca5ddb31b390819e1b87134d68fd0b9c61a5c0bd01805fdc0e00001d08",
+  "distributed_input_sha256": "9da5d1ca5ddb31b390819e1b87134d68fd0b9c61a5c0bd01805fdc0e00001d08",
+  "input_byte_identical": true,
+  "input_relative_tolerance": 1e-12,
+  "input_absolute_tolerance": 1e-12,
   "numerical_json_relative_tolerance": 1e-09,
   "numerical_json_absolute_tolerance": 1e-08,
   "other_outputs": "byte-identical within this environment",
@@ -29,13 +33,13 @@
     "run_manifest.json"
   ],
   "python": "3.12.14",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "checked_on": "2026-10-14",
   "platform": "macOS arm64",
   "clean_virtualenv": true,
   "installed_as_wheel": true,
   "pip_check_passed": true,
-  "tests_passed": 7,
+  "tests_passed": 8,
   "compared_with_previous_reference": true,
   "scientific_review": "pending"
 }

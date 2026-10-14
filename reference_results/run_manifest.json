@@ -1,5 +1,5 @@
 {
-  "version": "0.5.1",
+  "version": "0.5.2",
   "seed": 20261012,
   "synthetic": true,
   "input_sha256": "9da5d1ca5ddb31b390819e1b87134d68fd0b9c61a5c0bd01805fdc0e00001d08",
@@ -8,7 +8,7 @@
   "scipy": "1.17.1",
   "platform": "macOS-26.6.2-arm64-arm-64bit",
   "source_sha256": {
-    "__init__.py": "3d9f7f148623c801c30da2b6c8e5f4ae6617cfb1285415140053c91270cb4b8d",
+    "__init__.py": "1c7e2bdcf4d8e0ccb30f7854b09acda74fe3d6cb3a4811855f50dc689ab2a35a",
     "__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
     "cli.py": "60ab3eae26e7f86dee0e06bfa4305011cef24cf57a0b53228a2ab4c77a33032d",
     "continuation.py": "dd0d6f1e5227eb21a51f2cb585f902d75074e49316a0ab0e073c1cbf93b5005e",

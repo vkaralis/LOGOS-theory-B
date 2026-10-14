@@ -25,3 +25,5 @@ The v0.5.1 results also agree with the previous v0.5.0 reference outputs under t
 ## Cross-platform input regeneration
 
 Linux/x86-64 and macOS/arm64 may produce different last-bit floating-point values despite identical seeds and library versions. Input fields are compared recursively with relative and absolute tolerances 1e-12; IDs, schema, keys and nonnumeric values must agree exactly. The report records byte equality and SHA256 hashes for both distributed and regenerated inputs. This change retains the existing strict two-run output comparison and every numerical model audit.
+
+The v0.5.2 check passed all 8 tests, including rejection of changed observations and acceptance of last-bit roundoff. Two complete local runs passed all audits and agreed across 19 output files. Outputs also agree with the previous reference results. Input byte equality remained true on macOS; the portable input comparison is recorded separately.
