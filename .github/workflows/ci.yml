@@ -1,0 +1,21 @@
+name: Reproduce synthetic release
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements-lock.txt
+      - run: python -m pip install -r requirements-lock.txt
+      - run: python -m pip install --no-build-isolation --no-deps .
+      - run: python -m pip check
+      - run: python -m pytest
+      - run: python scripts/reproduce.py --output results
+      - uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-results-v0.5.1
+          path: results/

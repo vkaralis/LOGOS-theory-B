@@ -1,0 +1,42 @@
+{
+  "version": "0.5.1",
+  "seed": 20261012,
+  "synthetic": true,
+  "input_sha256": "9da5d1ca5ddb31b390819e1b87134d68fd0b9c61a5c0bd01805fdc0e00001d08",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.1",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "source_sha256": {
+    "__init__.py": "3d9f7f148623c801c30da2b6c8e5f4ae6617cfb1285415140053c91270cb4b8d",
+    "__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+    "cli.py": "60ab3eae26e7f86dee0e06bfa4305011cef24cf57a0b53228a2ab4c77a33032d",
+    "continuation.py": "dd0d6f1e5227eb21a51f2cb585f902d75074e49316a0ab0e073c1cbf93b5005e",
+    "fitting.py": "fdb38227c1781f93c04b130900f0cfdf4941bc6dbe986347a0065c6da1ef88c7",
+    "models.py": "673e8aed735e2f21f0b29b5a42f6e78b0b09206acf39eb63b27b00c4565b63f5",
+    "pipeline.py": "80af699a9ff64de267f6177211f1f39f87a2dc492db00f9a841a95ebfbf5267c",
+    "synthetic.py": "a5c98e59227e3fe77412662412aafdc32c3360caee2a7ef487a01c21d79d8af8",
+    "theoretical.py": "88dbb7f86e24945dd24b383b00c17f2602ca7c573c28a9974174ff7f55662578"
+  },
+  "output_sha256": {
+    "continuation_controls.json": "4ac7cfde0f8d8e6a2b515056276d28690d566dae4ddb20b7fdbea7157bec9492",
+    "continuation_increments.csv": "14dfad9b84f59bca8091f39a9e31015f62102267221621aac13622aaaa3ff016",
+    "figure_01_paired_increments.png": "36541b78f83e1a3bdaded07abbd8225298749c061527f1a54388a1606349df09",
+    "figure_01_paired_increments.svg": "86fa38df1cc415c7b5d8890b6cd9bf16188eb1a6b02ea5bc25583ecfebc2241f",
+    "figure_02_continuation.png": "301153428d799141914ba0b84f5c7d5b40eb9d350362cc25336258576077c62a",
+    "figure_02_continuation.svg": "4e82e4f06ecadd567f358dd90ce55231771a180ce97761a0e8bb93550d300db1",
+    "figure_03_dose_frontier.png": "c54d5849ae4350ff3c0844bbfd6e83f6a394f429c45cf7e3ea44085f99f8339b",
+    "figure_03_dose_frontier.svg": "844fed2b99961768052d73e8a7e095c00ef83372c8b78dcb5f1051f8bb76f11c",
+    "figure_04_trajectories.png": "062bb764f5d7893aa2fb6bb5487d9afd2df53cf5f2aed543fa0cb9065a4845fd",
+    "figure_04_trajectories.svg": "771873414011d5b977fb4be57351cd14f56e37624e2d52ec0d749e443cf11195",
+    "fit_diagnostics.json": "143a61b5a67fe9d4e3eaac91c5e61f5445731cfa71ee349803836738ba86ce13",
+    "fitted_models.json": "bae6ea8f828cf98f03af89f992633a719b6b5fda1c745e7c28e2a015e4cd7458",
+    "increment_summary.csv": "c75465284d0d53c63a35eaaf6bc141186c2e96f68d73ddc65d475a7c4e2fa26e",
+    "paired_increments.csv": "c1efe082ffe80f2e73a896cf95710e67932cf981234363c0296daa8feab3dbcc",
+    "regimen_controls.json": "9cf03d62617baa11256103b7352d6c5389d20feb5c75e49a8e5c24a39ea2cc89",
+    "sensitivity_controls.json": "7c4f915711d60a8be1ce2d5e80a6bd9e4b3736af204f7667ff46de75f44997cd",
+    "theoretical_controls.json": "502407f1248c3f5da09d0080919997abd6844831ea80e3ee5008dbf9e2cddba9",
+    "theoretical_dose_frontier.csv": "a15eb64aee187a94a593bb3928f4e1cfb2b2bad9a685b7dd801cafdc70497ec0",
+    "verification.json": "fefb91099e4298d924ce520067442ad2965d4277fc194583e0c44045211c501f"
+  }
+}

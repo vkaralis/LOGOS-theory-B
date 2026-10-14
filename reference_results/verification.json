@@ -1,0 +1,8 @@
+{
+  "all_passed": true,
+  "scope": "Synthetic fitting, matched controls, independent drug ODE objectives, full-path exposure searches, theoretical DOP853/Radau and quadrature checks",
+  "profiles_per_model": 4,
+  "candidate_count": 32,
+  "continuation_comparisons": 16,
+  "theoretical_targets": 4
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "ID": "SYN-REM-001",
+    "pk_success": true,
+    "pd_success": true,
+    "pk_loss": 0.0829868817611582,
+    "pd_rmse": 0.08736715875921229,
+    "pd_jacobian_condition": 177.11538294351251
+  },
+  {
+    "ID": "SYN-REM-002",
+    "pk_success": true,
+    "pd_success": true,
+    "pk_loss": 0.0322072520812874,
+    "pd_rmse": 0.07303788188614177,
+    "pd_jacobian_condition": 250.5569741283708
+  },
+  {
+    "ID": "SYN-REM-003",
+    "pk_success": true,
+    "pd_success": true,
+    "pk_loss": 0.056975669417551056,
+    "pd_rmse": 0.09464017852159451,
+    "pd_jacobian_condition": 147.28600809304407
+  },
+  {
+    "ID": "SYN-REM-004",
+    "pk_success": true,
+    "pd_success": true,
+    "pk_loss": 0.016665041527579336,
+    "pd_rmse": 0.08313058404455052,
+    "pd_jacobian_condition": 144.202058092387
+  },
+  {
+    "ID": "SYN-WAR-001",
+    "pk_success": true,
+    "pd_success": true,
+    "pk_loss": 0.0011638036669049208,
+    "pd_rmse": 0.15200225314840873,
+    "pd_jacobian_condition": 1.9002664886042713
+  },
+  {
+    "ID": "SYN-WAR-002",
+    "pk_success": true,
+    "pd_success": true,
+    "pk_loss": 0.00436550268133386,
+    "pd_rmse": 0.11992783428185291,
+    "pd_jacobian_condition": 2.065546380627679
+  },
+  {
+    "ID": "SYN-WAR-003",
+    "pk_success": true,
+    "pd_success": true,
+    "pk_loss": 0.0024567708455639544,
+    "pd_rmse": 0.1265229545846367,
+    "pd_jacobian_condition": 1.9975329037438105
+  },
+  {
+    "ID": "SYN-WAR-004",
+    "pk_success": true,
+    "pd_success": true,
+    "pk_loss": 0.00186935401287397,
+    "pd_rmse": 0.11690476854466055,
+    "pd_jacobian_condition": 1.738250098475192
+  }
+]
