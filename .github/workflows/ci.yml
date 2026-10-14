@@ -17,5 +17,5 @@ jobs:
       - run: python scripts/reproduce.py --output results
       - uses: actions/upload-artifact@v4
         with:
-          name: synthetic-results-v0.5.1
+          name: synthetic-results-v0.5.2
           path: results/

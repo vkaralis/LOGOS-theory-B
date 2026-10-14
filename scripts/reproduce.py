@@ -11,20 +11,20 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def compare(a, b, path="root"):
+def compare(a, b, path="root", *, rel_tol=1e-9, abs_tol=1e-8):
     if isinstance(a, dict):
         if not isinstance(b, dict) or a.keys() != b.keys():
             raise AssertionError(path)
         for key in a:
-            compare(a[key], b[key], f"{path}.{key}")
+            compare(a[key], b[key], f"{path}.{key}", rel_tol=rel_tol, abs_tol=abs_tol)
     elif isinstance(a, list):
         if not isinstance(b, list) or len(a) != len(b):
             raise AssertionError(path)
         for i, (x, y) in enumerate(zip(a, b)):
-            compare(x, y, f"{path}[{i}]")
+            compare(x, y, f"{path}[{i}]", rel_tol=rel_tol, abs_tol=abs_tol)
     elif isinstance(a, (int, float)) and not isinstance(a, bool):
-        if not isinstance(b, (int, float)) or not math.isclose(
-            a, b, rel_tol=1e-9, abs_tol=1e-8
+        if isinstance(b, bool) or not isinstance(b, (int, float)) or not math.isclose(
+            a, b, rel_tol=rel_tol, abs_tol=abs_tol
         ):
             raise AssertionError(f"{path}: {a} != {b}")
     elif a != b:
@@ -46,8 +46,10 @@ def main():
         cwd=out,
     )
     expected = ROOT / "data/synthetic_observations.json"
-    if data.read_bytes() != expected.read_bytes():
-        raise AssertionError("Synthetic input failed exact regeneration")
+    input_byte_identical = data.read_bytes() == expected.read_bytes()
+    # libm/BLAS differences can change the last float bits across platforms.
+    compare(json.loads(expected.read_text()), json.loads(data.read_text()),
+            "synthetic_input", rel_tol=1e-12, abs_tol=1e-12)
     for name in ["run1", "run2"]:
         subprocess.run(
             [
@@ -80,6 +82,10 @@ def main():
     report = dict(
         all_passed=True,
         input_sha256=hashlib.sha256(data.read_bytes()).hexdigest(),
+        distributed_input_sha256=hashlib.sha256(expected.read_bytes()).hexdigest(),
+        input_byte_identical=input_byte_identical,
+        input_relative_tolerance=1e-12,
+        input_absolute_tolerance=1e-12,
         numerical_json_relative_tolerance=1e-9,
         numerical_json_absolute_tolerance=1e-8,
         other_outputs="byte-identical within this environment",

@@ -27,7 +27,7 @@ The analyses demonstrate model-conditional optimization opportunities in fitted 
 
 ## Release and synthetic examples
 
-Version **0.5.1**. Python **3.12**. MIT license for code and synthetic data.
+Version **0.5.2**. Python **3.12**. MIT license for code and synthetic data.
 
 This repository implements matched finite-course comparisons for remifentanil-like infusion and warfarin-like oral PK/PD models. It also includes a dimensionless, injury-constrained fixed-target dose example. Every distributed observation is generated synthetically. Parameters are fitted afresh to those observations; no patient records or parameters fitted to patient records are included.
 
@@ -48,7 +48,7 @@ python -m pytest
 python scripts/reproduce.py --output results
 ```
 
-The reproduction script regenerates the checked-in dataset, verifies its exact SHA256, and executes the full fitting, optimization, numerical verification and plotting pipeline twice. It compares numerical outputs using declared tolerances and excludes runtime metadata from the numerical comparison. Output directories must be absent or empty to prevent mixing old and new results.
+The reproduction script regenerates the checked-in dataset, checks every field against the distributed dataset (relative/absolute numerical tolerances 1e-12) and records both SHA256 hashes, and executes the full fitting, optimization, numerical verification and plotting pipeline twice. It compares numerical outputs using declared tolerances and excludes runtime metadata from the numerical comparison. Output directories must be absent or empty to prevent mixing old and new results.
 
 For a single run or an alternative synthetic cohort:
 

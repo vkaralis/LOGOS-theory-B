@@ -13,4 +13,4 @@ Schema version 1 has `synthetic: true`, `seed`, `profiles_per_model`, `remifenta
 
 Generation adds independent normal noise to concentrations and responses, truncating concentrations at zero and PCA to 0–100. Design values and known oral absorption/lag are held fixed during fitting. Oral absorption/lag are simulation settings, not pooled estimates inferred from participants. Synthetic observations do not encode the completeness or missingness patterns of any empirical cohort.
 
-Fitting uses only observations and declared administration/absorption settings. Generated latent parameters are not passed into fitting. The dataset can be regenerated exactly within the pinned Python/NumPy environment.
+Fitting uses only observations and declared administration/absorption settings. Generated latent parameters are not passed into fitting. The dataset can be regenerated within numerical tolerances of 1e-12 across supported environments; byte equality is also recorded.

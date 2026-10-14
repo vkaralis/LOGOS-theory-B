@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "logos-theory-b"
-version = "0.5.1"
+version = "0.5.2"
 description = "Synthetic finite-course PK/PD regimen comparisons and dimensionless dose optimization"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
