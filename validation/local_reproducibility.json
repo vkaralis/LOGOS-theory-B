@@ -33,13 +33,13 @@
     "run_manifest.json"
   ],
   "python": "3.12.14",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "checked_on": "2026-10-14",
-  "platform": "macOS arm64",
   "clean_virtualenv": true,
   "installed_as_wheel": true,
   "pip_check_passed": true,
-  "tests_passed": 8,
-  "compared_with_previous_reference": true,
+  "tests_passed": 10,
+  "figure_metadata_absent": true,
+  "figure_pixels_unchanged": true,
   "scientific_review": "pending"
 }

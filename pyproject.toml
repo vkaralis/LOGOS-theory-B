@@ -4,7 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "logos-theory-b"
-version = "0.5.2"
+version = "0.5.3"
+authors = [{name = "Vangelis D. Karalis"}]
 description = "Synthetic finite-course PK/PD regimen comparisons and dimensionless dose optimization"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"

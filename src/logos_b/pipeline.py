@@ -381,12 +381,16 @@ def make_figures(out, increments, stopping, frontier, candidates, rem, war):
 
     plt.rcParams.update({"svg.hashsalt": "logos-b-0.5.0", "font.size": 10})
 
+    from .figure_metadata import strip_figure_metadata
+
     def export(fig, name):
         fig.tight_layout()
         fig.savefig(
-            out / f"{name}.png", dpi=160, metadata={"Software": "logos-b 0.5.0"}
+            out / f"{name}.png", dpi=160, metadata={"Software": None}
         )
         fig.savefig(out / f"{name}.svg", metadata={"Date": None})
+        strip_figure_metadata(out / f"{name}.png")
+        strip_figure_metadata(out / f"{name}.svg")
         plt.close(fig)
 
     fig, axes = plt.subplots(1, 2, figsize=(11, 4))

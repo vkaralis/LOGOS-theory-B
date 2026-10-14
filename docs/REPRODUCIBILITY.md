@@ -1,6 +1,6 @@
 # Reproducibility and supported environment
 
-Supported interpreter: **Python 3.12**, with `requires-python = ">=3.12,<3.13"`. The package metadata, README and GitHub Actions agree. Other minor versions are deliberately outside the declared support range. GitHub Actions is configured for Linux/Python 3.12; its remote execution remains to be checked after publication.
+Supported interpreter: **Python 3.12**, with `requires-python = ">=3.12,<3.13"`. The package metadata, README and GitHub Actions agree. Other minor versions are deliberately outside the declared support range. GitHub Actions is configured for Linux/Python 3.12; the complete remote execution passed in [GitHub Actions](https://github.com/vkaralis/LOGOS-theory-B/actions/runs/38576825512) for v0.5.2.
 
 The complete dependency closure is pinned in `requirements-lock.txt`, including build tools and pytest. Python packages are installed into a virtual environment without inherited system packages. Installation needs access to PyPI and compatible wheels. Library licenses are separate from this project's MIT license.
 
@@ -27,3 +27,5 @@ The v0.5.1 results also agree with the previous v0.5.0 reference outputs under t
 Linux/x86-64 and macOS/arm64 may produce different last-bit floating-point values despite identical seeds and library versions. Input fields are compared recursively with relative and absolute tolerances 1e-12; IDs, schema, keys and nonnumeric values must agree exactly. The report records byte equality and SHA256 hashes for both distributed and regenerated inputs. This change retains the existing strict two-run output comparison and every numerical model audit.
 
 The v0.5.2 check passed all 8 tests, including rejection of changed observations and acceptance of last-bit roundoff. Two complete local runs passed all audits and agreed across 19 output files. Outputs also agree with the previous reference results. Input byte equality remained true on macOS; the portable input comparison is recorded separately.
+
+For v0.5.3, all 10 tests and two complete local executions passed. Optional PNG/SVG metadata was removed; decoded PNG pixels and SVG geometry match the previous release exactly. Numerical CSV/JSON results are unchanged. The current local report records the metadata and repeat checks.

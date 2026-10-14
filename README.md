@@ -2,6 +2,8 @@
 
 **From Mathematical Optimal Control to Model-Informed Pharmacological Decisions**
 
+**Creator: Vangelis D. Karalis**
+
 > **Distributed data:** This public release contains only synthetic remifentanil-like and warfarin-like observations. Parameters are fitted afresh to these synthetic observations; no patient records or parameters fitted to patient records are included. The description below states the research framework; the distributed examples do not reproduce empirical clinical results.
 
 **LOGOS (from Ancient Greek λόγος: reason, rational account; Longitudinal Optimization of Global Outcomes and Strategies)** is a mathematical and computational framework for evaluating whole-regimen pharmacokinetic/pharmacodynamic (PK/PD) treatment strategies.
@@ -27,7 +29,7 @@ The analyses demonstrate model-conditional optimization opportunities in fitted 
 
 ## Release and synthetic examples
 
-Version **0.5.2**. Python **3.12**. MIT license for code and synthetic data.
+Version **0.5.3**. Python **3.12**. MIT license for code and synthetic data.
 
 This repository implements matched finite-course comparisons for remifentanil-like infusion and warfarin-like oral PK/PD models. It also includes a dimensionless, injury-constrained fixed-target dose example. Every distributed observation is generated synthetically. Parameters are fitted afresh to those observations; no patient records or parameters fitted to patient records are included.
 

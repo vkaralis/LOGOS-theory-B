@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.5.3 — 2026-10-14
+
+- Identify Vangelis D. Karalis as creator and copyright holder.
+- Remove optional PNG/SVG metadata while preserving rendered figures.
+- Add metadata-removal regression checks and repeat full reproduction.
+
 ## v0.5.2 — 2026-10-14
 
 - Fix cross-platform synthetic-input regeneration checks using strict 1e-12 numerical tolerances instead of requiring identical float serialization.
